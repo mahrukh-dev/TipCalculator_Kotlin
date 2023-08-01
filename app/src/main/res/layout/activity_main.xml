@@ -16,3 +16,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- this is a comment in XML -->
+
+    <!-- this is a
+    multi-line
+    Comment.
+    And another
+    Multi-line comment -->
