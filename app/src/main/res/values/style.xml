@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="cost_of_service_edittext">
+    <style name="cost_of_service_textfield">
         <item name="android:layout_width">@dimen/_140sdp</item>
-        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:hint">@string/cost_of_service</item>
+    </style>
+
+    <style name="cost_of_service_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:inputType">numberDecimal</item>
     </style>
 
@@ -22,7 +27,7 @@
 
     <style name="switch_style">
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">@dimen/_38sdp</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/round_up_tip</item>
         <item name="android:checked">true</item>
     </style>

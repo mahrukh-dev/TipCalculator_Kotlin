@@ -7,14 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:padding="@dimen/_15sdp"
-
     >
 
-    <EditText
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/cost_of_service"
-        style="@style/cost_of_service_edittext"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/cost_of_service_textfield"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cost_of_service_edit_text"
+            style="@style/cost_of_service_edittext"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 
     <TextView
         android:id="@+id/service_question"
@@ -47,13 +58,13 @@
             android:text="@string/okay" />
 
     </RadioGroup>
-    
-    <Switch
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/round_up_switch"
+        style="@style/switch_style"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/tip_options"
         app:layout_constraintTop_toBottomOf="@id/tip_options"
-        style="@style/switch_style"
         />
 
     <Button
