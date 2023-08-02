@@ -3,6 +3,12 @@
     <style name="Base.Theme.TipCalculator_Kotlin" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+        <item name="radioButtonStyle">@style/radio_button</item>
+        <item name="switchStyle">@style/switch_style</item>
     </style>
 
     <style name="Theme.TipCalculator_Kotlin" parent="Base.Theme.TipCalculator_Kotlin" />
