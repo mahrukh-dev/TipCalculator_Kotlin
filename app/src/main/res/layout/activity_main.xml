@@ -18,39 +18,29 @@
 
     <ImageView
         android:id="@+id/icon_cost_of_service"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:importantForAccessibility="no"
+        style="@style/main_image_view"
         app:srcCompat="@drawable/baseline_bookmark_24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/cost_of_service"
-        app:layout_constraintBottom_toBottomOf="@id/cost_of_service"
-
+        app:layout_constraintTop_toTopOf="@id/cost_of_service_textinput_layout"
+        app:layout_constraintBottom_toBottomOf="@id/cost_of_service_textinput_layout"
         />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/cost_of_service"
-        android:layout_height="wrap_content"
+        android:id="@+id/cost_of_service_textinput_layout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="@dimen/_20sdp"
         app:layout_constraintStart_toEndOf="@id/icon_cost_of_service"
-        style="@style/cost_of_service_textfield"
-
+        style="@style/cost_of_service_text_field"
         >
-
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/cost_of_service_edit_text"
             style="@style/cost_of_service_edittext"
             />
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
         android:id="@+id/icon_service_question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:importantForAccessibility="no"
+        style="@style/main_image_view"
         app:srcCompat="@drawable/baseline_room_service_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/service_question"
@@ -59,10 +49,8 @@
     <TextView
         android:id="@+id/service_question"
         style="@style/tip_calculator_textview"
-        android:text="@string/how_was_the_service"
-        android:layout_marginTop="@dimen/_20sdp"
-        app:layout_constraintStart_toStartOf="@id/cost_of_service"
-        app:layout_constraintTop_toBottomOf="@id/cost_of_service"
+        app:layout_constraintStart_toStartOf="@id/cost_of_service_textinput_layout"
+        app:layout_constraintTop_toBottomOf="@id/cost_of_service_textinput_layout"
         />
 
     <RadioGroup
@@ -91,9 +79,7 @@
 
     <ImageView
         android:id="@+id/icon_round_up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:importantForAccessibility="no"
+        style="@style/main_image_view"
         app:srcCompat="@drawable/baseline_call_made_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/round_up_switch"
@@ -103,7 +89,6 @@
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/round_up_switch"
         style="@style/switch_style"
-        android:layout_marginStart="@dimen/_20sdp"
         app:layout_constraintStart_toEndOf="@id/icon_round_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/tip_options"
@@ -112,12 +97,9 @@
 
     <Button
         android:id="@+id/calculate_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/calculate"
+        style="@style/calculate_button"
         app:layout_constraintTop_toBottomOf="@id/round_up_switch"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/_8sdp"
         app:layout_constraintStart_toStartOf="@id/round_up_switch"
         />
 
@@ -127,9 +109,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/calculate_button"
         tools:text="Tip Amount: $10"
-        android:layout_marginTop="@dimen/_8sdp"
         />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

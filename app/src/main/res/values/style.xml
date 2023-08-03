@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="cost_of_service_textfield">
+    <style name="cost_of_service_text_field">
         <item name="android:layout_width">@dimen/_140sdp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:hint">@string/cost_of_service</item>
+        <item name="android:layout_marginStart">@dimen/_20sdp</item>
     </style>
 
     <style name="cost_of_service_edittext">
@@ -14,11 +15,19 @@
     </style>
 
     <style name="tip_calculator_textview" parent="Widget.MaterialComponents.TextView">
+        <item name="android:text">"Tip Amount: $0.0"</item>
+        <item name="android:layout_marginTop">@dimen/_20sdp</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:minHeight">@dimen/_45sdp</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+    </style>
+
+    <style name="main_image_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:importantForAccessibility">no</item>
     </style>
 
     <style name="radio_button" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
@@ -37,12 +46,20 @@
 
     <style name="switch_style" parent="Widget.MaterialComponents.CompoundButton.Switch">
         <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginStart">@dimen/_20sdp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/round_up_tip</item>
         <item name="android:checked">true</item>
         <item name="android:minHeight">@dimen/_45sdp</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+    </style>
+
+    <style name="calculate_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/calculate</item>
+        <item name="android:layout_marginTop">@dimen/_8sdp</item>
     </style>
 
 </resources>
