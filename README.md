@@ -26,6 +26,24 @@ To ensure consistency and reusability of styles across the app, the app leverage
 # Use of Scrollbar in UI to Support Screen Rotation
 The UI layout of the app is designed to support screen rotation. When the user rotates the screen, the app will adjust the layout dynamically to fit the new orientation. To handle longer content that might not fit on the screen, the app incorporates a scrollbar, enabling users to scroll through the content and access all elements conveniently, regardless of the device's orientation.
 
+# Instrumented Tests
+The app includes instrumented tests to verify the accuracy of tip calculations for different percentages. The tests are written using Android's Espresso testing framework and can be found in the TipCalculatorInstrumentedTest class.
+
+To run these tests, follow these steps:
+- Open Android Studio.
+- Connect your Android device or start an emulator.
+- In Android Studio's "Project" view, navigate to the androidTest folder and open the TipCalculatorInstrumentedTest.kt file.
+- Right-click inside the test class or on a specific test function.
+- Select "Run 'CalculatorTests'".
+
+Test Cases
+1. Calculate 20 Percent Tip
+   This test verifies whether the app correctly calculates a 20 percent tip for a given cost of service.
+2. Calculate 18 Percent Tip
+   This test verifies whether the app correctly calculates an 18 percent tip for a given cost of service
+3. Calculate 15 Percent Tip
+   This test verifies whether the app correctly calculates an 15 percent tip for a given cost of service
+
 # How to Use
 - Launch the app on your Android device.
 - Enter the cost of the service in the provided Material Design Edit Text field.
