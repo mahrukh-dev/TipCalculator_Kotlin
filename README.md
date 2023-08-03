@@ -17,6 +17,15 @@ To select the quality of service, the app uses a Radio Group with Radio Buttons,
 - **handleKeyEvent() Function:**
   To enhance user experience, the app includes a handleKeyEvent() function that detects when the Enter key is pressed and hides the keyboard accordingly.
 
+# Difference in Light Theme and Dark Theme
+The app supports both light and dark themes. Users can choose their preferred theme from the device settings, and the app will automatically adapt to the selected theme. The light theme provides a clean and bright appearance, while the dark theme offers a sleek and modern look that is easier on the eyes in low-light environments.
+
+# Better Coding using style.xml File
+To ensure consistency and reusability of styles across the app, the app leverages the style.xml file. It defines custom styles for various UI elements, such as buttons, text fields, and backgrounds. By centralizing the style definitions, the codebase becomes more organized and maintainable. Additionally, using styles helps maintain a consistent visual language throughout the app, adhering to Material Design guidelines.
+
+# Use of Scrollbar in UI to Support Screen Rotation
+The UI layout of the app is designed to support screen rotation. When the user rotates the screen, the app will adjust the layout dynamically to fit the new orientation. To handle longer content that might not fit on the screen, the app incorporates a scrollbar, enabling users to scroll through the content and access all elements conveniently, regardless of the device's orientation.
+
 # How to Use
 - Launch the app on your Android device.
 - Enter the cost of the service in the provided Material Design Edit Text field.
